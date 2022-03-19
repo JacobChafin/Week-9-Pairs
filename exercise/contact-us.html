@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    
+    <header>
+
+        <img src="images/te-pops.png" alt="Popsicle with the Tech Elevator Logo" />
+        <h1>Tech Elevator Popsicles</h1>
+
+    </header>
+    <nav>
+
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a> <!-- our href should be home.html-->
+            <a href="#">
+                <li>Store</li>
+            </a> <!-- our href should be store.html-->
+            <a href="contact-us.html">
+                <li>Contact Us</li>
+            </a><!-- our href should be contact-us.html-->
+
+        </ul>
+
+    </nav>
+    <main>
+        <h2>Contact Us</h2>
+
+        <form method="POST" action="/api/contact-us">
+
+            <div>
+                <label for="Name">Name:</label>
+                <input id="Name" name="Name" type="text" />
+            </div>
+
+            <div>
+                <label for="How-did-you-hear-about-us">How did you hear about us?:</label>
+                <select>
+                    <option value="">Popsicle Monthly</option>
+                    <option value="">Friends and Family</option>
+                    <option value="">Ben Langhinrichs</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="What-is-the-color-of-your-favorite-popsicle">What is the color of your favorite
+                    popsicle?:</label>
+                <input id="What-is-the-color-of-your-favorite-popsicle"
+                    name="What-is-the-color-of-your-favorite-popsicle" type="color" value=#00afef />
+            </div>
+
+            <div>
+                <label for="Please-let-us-know-any-comments-you-have">Please let us know any comments you have?:</label>
+                <input id="Please-let-us-know-any-comments-you-have" name="Please-let-us-know-any-comments-you-have"
+                    type="text-box" style="height:120px; width:200px;" textarea cols="40" rows="5" />
+            </div>
+
+            <div>
+                <input type="submit" />
+            </div>
+        </form>
+        <footer>
+            @Tech Elevator 2020
+        </footer>
 </body>
+
 </html>
