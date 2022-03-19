@@ -33,10 +33,15 @@ main img {
     width: 35%;
 }
 
+main li {
+   list-style-type: none;
+}
+
 main li:before {
     content: '🍡';
     margin-left: -31px;
     padding-right: 8px;
+    
 }
 
 main, section, footer {
