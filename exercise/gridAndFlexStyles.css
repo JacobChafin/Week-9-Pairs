@@ -1,0 +1,77 @@
+
+#topHeaderAndNav {
+    grid-area: topHAN;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    
+}
+
+nav {
+
+}
+
+#main1 {
+    grid-area: main1;
+    display: flex;
+    flex-direction: row;
+}
+
+#main2 {
+    grid-area: main2;
+    display: flex;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+}
+
+body {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "topHAN topHAN"
+        "main1 main1"
+        "main2 main2"
+        "footer footer"
+    ;
+  }
+
+  /* #topHeaderAndNav {
+    grid-area: topHAN;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    
+}
+
+nav {
+
+}
+
+#main1 {
+    grid-area: main1;
+    display: flex;
+    flex-direction: row;
+}
+
+#main2 {
+    grid-area: main2;
+    display: flex;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+} */
+
+
+
