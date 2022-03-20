@@ -1,48 +1,51 @@
-/* 
-#topHeaderAndNav {
-    grid-area: topHAN;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-} */
+
 
 header { 
 grid-area: header;
+display: flex;
 }
+
 nav ul a:nth-child(1) {
-grid-area: "home";
+grid-area: home;
 }
+
 nav ul a:nth-child(2) {
-grid-area: "store";
+grid-area: store;
 }
+
 nav ul a:nth-child(3) {
     grid-area: contactUs;
     text-align: center;
 }
+
 nav {
     grid-area: nav;
-    display: block;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "home store contactUs";
+    /* display: block; */
+    /* align-items: center; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-areas: "home store contactUs"; */
 }
-
-/* nav > ul {
-    text-align: center;
-    justify-content: space-evenly;
-    display:flex;
-} */
 
 #main1 {
     grid-area: main1;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
-
+/* 
 #main2 {
     grid-area: main2;
     display: flex;
+} */
+
+main#main2 > section > div#PopRace{
+    grid-area: popRace;
+}
+
+main#main2 > section > div#GetRefreshed {
+    border: 1px solid red;
+    grid-area: getRefreshed;
 }
 
 footer {
@@ -50,46 +53,15 @@ footer {
     display: flex;
 }
 
-body {
+body#homeBody {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
         "header header nav nav"
         "main1 main1 main1 main1"
-        "main2 main2 main2 main2"
+        "popRace popRace getRefreshed getRefreshed"
         "footer footer footer footer";
+        gap: 5px;
   }
-
-  /* #topHeaderAndNav {
-    grid-area: topHAN;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-header {
-    
-}
-
-nav {
-
-}
-
-#main1 {
-    grid-area: main1;
-    display: flex;
-    flex-direction: row;
-}
-
-#main2 {
-    grid-area: main2;
-    display: flex;
-}
-
-footer {
-    grid-area: footer;
-    display: flex;
-} */
-
 
 
