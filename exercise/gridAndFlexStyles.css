@@ -1,18 +1,38 @@
-
+/* 
 #topHeaderAndNav {
     grid-area: topHAN;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+} */
 
-header {
-    
+header { 
+grid-area: header;
 }
-
+nav ul a:nth-child(1) {
+grid-area: "home";
+}
+nav ul a:nth-child(2) {
+grid-area: "store";
+}
+nav ul a:nth-child(3) {
+    grid-area: contactUs;
+    text-align: center;
+}
 nav {
-
+    grid-area: nav;
+    display: block;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "home store contactUs";
 }
+
+/* nav > ul {
+    text-align: center;
+    justify-content: space-evenly;
+    display:flex;
+} */
 
 #main1 {
     grid-area: main1;
@@ -31,15 +51,13 @@ footer {
 }
 
 body {
-
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-        "topHAN topHAN"
-        "main1 main1"
-        "main2 main2"
-        "footer footer"
-    ;
+        "header header nav nav"
+        "main1 main1 main1 main1"
+        "main2 main2 main2 main2"
+        "footer footer footer footer";
   }
 
   /* #topHeaderAndNav {

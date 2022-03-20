@@ -9,12 +9,18 @@ nav ul {
 }
 
 nav ul li {
+    text-transform: uppercase;
     list-style: none;
     width: 30%;
     background-color: #00afef;
     border-radius: 5px;
     text-align: center;
     line-height: 50px;
+}
+nav ul li {
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
 }
 
 header img {
