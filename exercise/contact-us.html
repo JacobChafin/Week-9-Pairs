@@ -7,44 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="grid-&-flex-stylesheet" href="grid-&-flex-styles.css" />
+    <link rel="stylesheet" href="gridAndFlexStyles.css" />
 </head>
 
 <body id="contactBody">
     <header>
-
         <img src="images/te-pops.png" alt="Popsicle with the Tech Elevator Logo" />
         <h1>Tech Elevator Popsicles</h1>
-
     </header>
+
     <nav>
-
         <ul>
-            <a href="index.html">
-                <li>Home</li>
-            </a> <!-- our href should be home.html-->
-            <a href="#">
-                <li>Store</li>
-            </a> <!-- our href should be store.html-->
-            <a href="contact-us.html">
-                <li>Contact Us</li>
-            </a><!-- our href should be contact-us.html-->
-
+            <li><a href="index.html">
+                    Home
+                </a></li>
+            <li><a href="#">
+                    Store
+                </a></li> <!-- our href should be store.html-->
+            <li><a href="contact-us.html">
+                    Contact Us
+                </a></li>
         </ul>
-
     </nav>
-    <main>
+    <main id="contactMain">
         <h2>Contact Us</h2>
 
         <form method="POST" action="/api/contact-us">
 
             <div>
-                <label for="Name">Name:</label>
+                <label for="Name">Name:</label> <br />
                 <input id="Name" name="Name" type="text" />
             </div>
 
             <div>
-                <label for="How-did-you-hear-about-us">How did you hear about us?:</label>
+                <label for="How-did-you-hear-about-us">How did you hear about us?:</label> <br />
                 <select>
                     <option value="">Popsicle Monthly</option>
                     <option value="">Friends and Family</option>
@@ -55,21 +51,23 @@
 
             <div>
                 <label for="What-is-the-color-of-your-favorite-popsicle">What is the color of your favorite
-                    popsicle?:</label>
+                    popsicle?:</label><br />
                 <input id="What-is-the-color-of-your-favorite-popsicle"
                     name="What-is-the-color-of-your-favorite-popsicle" type="color" value=#00afef />
             </div>
 
             <div>
-                <label for="Please-let-us-know-any-comments-you-have">Please let us know any comments you have?:</label><br />
-                    <textarea id="Please-let-us-know-any-comments-you-have" name="Please-let-us-know-any-comments-you-have"
+                <label for="Please-let-us-know-any-comments-you-have">Please let us know any comments you
+                    have?:</label><br />
+                <textarea id="Please-let-us-know-any-comments-you-have" name="Please-let-us-know-any-comments-you-have"
                     rows="8" cols="60"></textarea>
             </div>
-
-            <div>
-                <input type="submit" />
-            </div>
+<a class="submit-button" href="#">
+            Store
+        </a>
+   
         </form>
+    </main>
         <footer>
             <p>&copy Tech Elevator 2020 </p>
         </footer>

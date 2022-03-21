@@ -1,53 +1,48 @@
 
-
 header { 
 grid-area: header;
 display: flex;
 }
-/* 
-nav ul a:nth-child(1) {
-grid-area: home;
-} */
 
-/* nav ul a:nth-child(2) {
-grid-area: store;
-} */
-
-/* nav ul a:nth-child(3) {
-    grid-area: contactUs;
-    text-align: center;
-} */
-
+/* nav start */
 nav {
     grid-area: nav;
-    /* display: block; */
-    /* align-items: center; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-template-areas: "home store contactUs"; */
 }
-
+/* nav end */
 
 main {
     grid-area: main1;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* justify-content: space-evenly; */
     align-items: center;
 }
 
 
-
-
+/* pop race start */
 #PopRace{
     grid-area: popRace;
+    display:flex;
 }
+#PopRace #reminder {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+#PopRace #reminder p {
+text-align: left;
+}
+/* pop race end */
 
+/* get refreshed start */
 #GetRefreshed {
-    border: 1px solid red;
+    text-align: center;
     grid-area: getRefreshed;
 }
+#GetRefreshed p {
+text-align: left;
+}
+/* get refreshed end */
 
 footer {
     grid-area: footer;
@@ -65,4 +60,30 @@ body#homeBody {
         gap: 5px;
   }
 
+/* contact start */
+#contactBody {
+}
 
+/* #contactMain {
+    display:flex;
+    grid-template-columns: 1fr;
+    grid-template-areas: none";
+}
+#contactMain h2 {
+    grid-area: h2;
+} */
+form div {
+    margin-bottom: 30px;
+}
+form div label {
+
+}
+
+#contactMain {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+}
+/* padding on each section will do the job of spacing */
+
+/* contact end */
