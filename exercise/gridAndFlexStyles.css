@@ -4,19 +4,19 @@ header {
 grid-area: header;
 display: flex;
 }
-
+/* 
 nav ul a:nth-child(1) {
 grid-area: home;
-}
+} */
 
-nav ul a:nth-child(2) {
+/* nav ul a:nth-child(2) {
 grid-area: store;
-}
+} */
 
-nav ul a:nth-child(3) {
+/* nav ul a:nth-child(3) {
     grid-area: contactUs;
     text-align: center;
-}
+} */
 
 nav {
     grid-area: nav;
@@ -26,6 +26,11 @@ nav {
     /* grid-template-columns: 1fr 1fr 1fr; */
     /* grid-template-areas: "home store contactUs"; */
 }
+
+/* nav ul {
+    display: flex;
+    justify-content: space-between;
+} */
 
 #main1 {
     grid-area: main1;
@@ -39,11 +44,11 @@ nav {
     display: flex;
 } */
 
-main#main2 > section > div#PopRace{
+#PopRace{
     grid-area: popRace;
 }
 
-main#main2 > section > div#GetRefreshed {
+#GetRefreshed {
     border: 1px solid red;
     grid-area: getRefreshed;
 }
